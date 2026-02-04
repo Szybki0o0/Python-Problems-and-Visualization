@@ -36,3 +36,8 @@ print(supplies)
 # Funkzja id() zwraca adres zmiennej
 print(id(bibeloty))
 print(id(supplies))
+supplies = ['japko','kalafior','śliwka','banan']
+def coma(list):
+    return ' i '.join(", ".join(list).rsplit(', ', 1))
+
+print(coma(supplies))
